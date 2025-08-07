@@ -1,3 +1,4 @@
+import 'dotenv/config'; // phải đứng đầu tiên
 import { ConfigService } from '@nestjs/config';
 import { DataSource, DataSourceOptions } from 'typeorm';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
