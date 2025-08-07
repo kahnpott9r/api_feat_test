@@ -25,9 +25,10 @@ export const dbConfig = (configService: ConfigService): DataSourceOptions => ({
       }
     : {}),
     
-  synchronize: configService.get('NODE_ENV') !== 'production', // Never true in prod
+  synchronize: false, // Never true in prod
   entities: [path.join(__dirname, '**', '*.entity.{ts,js}')],
-  migrations: [path.join(__dirname, 'migrations', '*.{ts,js}')],
+  migrationsRun: false
+  //migrations: [path.join(__dirname, 'migrations', '*.{ts,js}')],
   logging: configService.get('NODE_ENV') !== 'production' ? ['error', 'warn'] : false,
   namingStrategy: new SnakeNamingStrategy(),
 });
