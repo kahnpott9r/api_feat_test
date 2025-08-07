@@ -32,10 +32,6 @@ import { dbConfig } from './typeOrm.config';
 import { UserRolesModule } from './user_roles/user_roles.module';
 import { UsersModule } from './users/users.module';
 
-console.log('Environment:', process.env.NODE_ENV);
-console.log('Database Host:', process.env.DB_HOST ? 'Set' : 'Not set');
-console.log('Access Token Secret:', process.env.ACCESS_TOKEN_SECRET ? 'Set' : 'Not set');
-
 @Module({
   imports: [
     ThrottlerModule.forRoot({
