@@ -89,7 +89,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://localhost:5183',
-      'https://web-production-6fc45.up.railway.app',
+      'https://webfeattest-production.up.railway.app',
       "https://app.propertylinqs.com",
       ...(process.env.FRONTEND_URL ? [process.env.FRONTEND_URL] : [])
     ],
