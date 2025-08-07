@@ -53,7 +53,7 @@ console.log('Access Token Secret:', process.env.ACCESS_TOKEN_SECRET ? 'Set' : 'N
     ConfigModule.forRoot({
       isGlobal: true,
       // For Railway, remove envFilePath or make it conditional
-      envFilePath: process.env.NODE_ENV === 'local' ? ['.env.local', '.env'] : undefined,
+      // envFilePath: process.env.NODE_ENV === 'local' ? ['.env.local', '.env'] : undefined,
       // Railway injects env vars directly, no file needed
       validationSchema: Joi.object({
         DB_HOST: Joi.string().required(),
