@@ -3,7 +3,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import * as path from 'path';
 
-console.log("DB detail=====>", process.env.DB_PASSWORD)
+console.log("DB detail=====>", process.env.NODE_ENV)
 
 // Only load dotenv in local development
 if (process.env.NODE_ENV === 'local' || !process.env.NODE_ENV) {
