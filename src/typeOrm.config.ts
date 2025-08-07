@@ -4,9 +4,9 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
 import * as path from 'path';
 
 // Only load dotenv in local development
-if (process.env.NODE_ENV === 'local' || !process.env.NODE_ENV) {
-  require('dotenv').config();
-}
+// if (process.env.NODE_ENV === 'local' || !process.env.NODE_ENV) {
+//   require('dotenv').config();
+// }
 console.log("DB detail=====>", process.env.DB_PASSWORD)
 export const dbConfig = (configService: ConfigService): DataSourceOptions => ({
   type: 'postgres',
