@@ -1,0 +1,20 @@
+{
+  "Hello": "Hello",
+  "NotEmpty": "{property} cannot be empty.",
+  "MustEnum": "{property} must be a valid enum value.",
+  "MustArray": "{property} must be a valid array value.",
+  "MustNumber": "{property} must be a valid number value.",
+  "MustString": "{property} must be a valid string value.",
+  "MustEmail": "{property} must be a valid email value.",
+  "EmailUsed": "Email already used",
+  "MustRenter": "Every agreements MUST have agreement_logitical_item with type Renter.",
+  "CantMoreRenter": "Every agreements CANNOT have more agreement_logitical_item with type Renter.",
+  "CantServiceFee": "Every agreements CANNOT have more agreement_logitical_item with type Service Fee.",
+  "CantDepositFee": "Every agreements CANNOT have more agreement_logitical_item with type Deposite.",
+  "InvalidRefresh": "Invalid refresh token",
+  "InvalidParams": "Invalid params",
+  "RoleAlreadyExist": "Role is already exited in this Tenant.",
+  "QueryKeyInvalid": "Query key is not valid",
+  "MinLength": "{property} must be at least {min} characters long.",
+    "MaxLength": "{property} must be at most {max} characters long."
+}

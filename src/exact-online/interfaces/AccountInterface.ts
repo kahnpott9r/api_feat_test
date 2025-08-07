@@ -1,0 +1,142 @@
+export interface AccountInterface {
+  ID?: string;
+  Accountant?: string;
+  AccountManager?: string;
+  ActivitySector?: string;
+  ActivitySubSector?: string;
+  AddressLine1?: string;
+  AddressLine2?: string;
+  AddressLine3?: string;
+  Blocked?: boolean;
+  BSN?: string;
+  BusinessType?: string;
+  CanDropShip?: boolean;
+  ChamberOfCommerce?: string;
+  City?: string;
+  Classification1?: string;
+  Classification2?: string;
+  Classification3?: string;
+  Classification4?: string;
+  Classification5?: string;
+  Classification6?: string;
+  Classification7?: string;
+  Classification8?: string;
+  Code?: string;
+  CodeAtSupplier?: string;
+  CompanySize?: string;
+  ConsolidationScenario?: number;
+  ControlledDate?: Date;
+  Country?: string;
+  CreditLinePurchase?: number;
+  CreditLineSales?: number;
+  DatevCreditorCode?: string;
+  DatevDebtorCode?: string;
+  DiscountPurchase?: number;
+  DiscountSales?: number;
+  Email?: string;
+  EndDate?: Date;
+  EORINumber?: string;
+  EstablishedDate?: Date;
+  Fax?: string;
+  GLAccountPurchase?: string;
+  GLAccountSales?: string;
+  GLAP?: string;
+  GLAR?: string;
+  GlnNumber?: string;
+  HasWithholdingTaxSales?: boolean;
+  IgnoreDatevWarningMessage?: boolean;
+  IncotermAddressPurchase?: string;
+  IncotermAddressSales?: string;
+  IncotermCodePurchase?: string;
+  IncotermCodeSales?: string;
+  IncotermVersionPurchase?: number;
+  IncotermVersionSales?: number;
+  IntraStatArea?: string;
+  IntraStatDeliveryTerm?: string;
+  IntraStatSystem?: string;
+  IntraStatTransactionA?: string;
+  IntraStatTransactionB?: string;
+  IntraStatTransportMethod?: string;
+  InvoiceAccount?: string;
+  InvoiceAttachmentType?: number;
+  InvoicingMethod?: number;
+  IsAccountant?: number;
+  IsAgency?: number;
+  IsCompetitor?: number;
+  IsExtraDuty?: boolean;
+  IsMailing?: number;
+  IsPilot?: boolean;
+  IsReseller?: boolean;
+  IsSupplier?: boolean;
+  Language?: string;
+  Latitude?: number;
+  LeadPurpose?: string;
+  LeadSource?: string;
+  Logo?: ArrayBuffer;
+  LogoFileName?: string;
+  Longitude?: number;
+  MainContact?: string;
+  Name: string;
+  OINNumber?: string;
+  Parent?: string;
+  PayAsYouEarn?: string;
+  PaymentConditionPurchase?: string;
+  PaymentConditionSales?: string;
+  Phone?: string;
+  PhoneExtension?: string;
+  Postcode?: string;
+  PriceList?: string;
+  PurchaseCurrency?: string;
+  PurchaseLeadDays?: number;
+  PurchaseVATCode?: string;
+  RecepientOfCommissions?: boolean;
+  Remarks?: string;
+  Reseller?: string;
+  RSIN?: string;
+  SalesCurrency?: string;
+  SalesTaxSchedule?: string;
+  SalesVATCode?: string;
+  SearchCode?: string;
+  SecurityLevel?: number;
+  SeparateInvPerSubscription?: number;
+  ShippingLeadDays?: number;
+  ShippingMethod?: string;
+  ShowRemarkForSales?: boolean;
+  StartDate?: Date;
+  State?: string;
+  Status?: string;
+  TradeName?: string;
+  UniqueTaxpayerReference?: string;
+  VATLiability?: string;
+  VATNumber?: string;
+  Website?: string;
+}
+
+export interface CreateAccountResponseInterface {
+  d: AccountInterface;
+}
+
+export interface AccountsResponseInterface {
+  d: {
+    results: AccountSelected[];
+    __next: string;
+  };
+}
+
+export interface AccountSelected {
+  __metadata: {
+    uri: string;
+    type: string;
+  };
+  ID: string;
+  AddressLine1: string | null;
+  City: string | null;
+  Code: string;
+  Status: string;
+  ChamberOfCommerce: string;
+  Email: string;
+  Name: string;
+  Phone: string;
+  Postcode: string | null;
+  VATNumber: string | null;
+}

@@ -1,0 +1,34 @@
+export interface ExactTransactionLineInterface {
+  ID: string;
+  AccountCode: string;
+  AccountName: string;
+  AmountDC: number;
+  VATPercentage: number;
+  VATType: string;
+  VATCodeDescription: string;
+  VATCode: string;
+  Item: string;
+  ItemCode: string;
+  ItemDescription: string;
+  LineNumber: number;
+  LineType: number;
+  Asset: string;
+  AssetCode: string;
+  AssetDescription: string;
+  CostUnit: string;
+  CostUnitDescription: string;
+  Currency: string;
+  ExchangeRate: number;
+  FinancialPeriod: number;
+  FinancialYear: number;
+  Status: number;
+  DueDate: string;
+  Date: string;
+  InvoiceNumber: string | number;
+  JournalCode: string;
+  JournalDescription: string;
+  GLAccountCode: string;
+  GLAccountDescription: string;
+  Type: number;
+  Description: string;
+}

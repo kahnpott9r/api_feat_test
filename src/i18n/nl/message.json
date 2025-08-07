@@ -1,0 +1,20 @@
+{
+  "Hello": "Hallo",
+  "NotEmpty": "{property} mag niet leeg zijn.",
+  "MustEnum": "{property} moet een geldige opsommingswaarde zijn.",
+  "MustArray": "{property} moet een geldige matrixwaarde zijn.",
+  "MustNumber": "{property} moet een geldige getalswaarde zijn.",
+  "MustString": "{property} moet een geldige tekenreekswaarde zijn.",
+  "MustEmail": "{property} moet een geldige e-mailwaarde zijn.",
+  "EmailUsed": "Email is al gebruikt",
+  "MustRenter": "Elke overeenkomst MOET een overeenkomst_logistiek_item hebben met het type Huurder.",
+  "CantMoreRenter": "Elke overeenkomst KAN NIET meer overeenkomst_logisch_item hebben met type Huurder.",
+  "CantServiceFee": "Elke overeenkomst KAN NIET meer overeenkomst_logisch_item hebben met het type Servicekosten.",
+  "CantDepositFee": "Elke overeenkomst KAN NIET meer overeenkomst_logisch_item hebben met type Deposite.",
+  "InvalidRefresh": "Ongeldig vernieuwingstoken",
+  "InvalidParams": "Ongeldige parameters",
+  "RoleAlreadyExist": "Rol is al verlaten in deze Tenant.",
+  "QueryKeyInvalid": "Querysleutel is niet geldig",
+  "MinLength": "{property} moet minimaal {min} tekens lang zijn.",
+  "MaxLength": "{property} moet maximaal {max} tekens lang zijn."
+}
